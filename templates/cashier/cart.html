@@ -9,13 +9,13 @@
         <!-- Begin Page Content -->
         <div class="container-fluid">
           <!-- Page Heading -->
-          <h1 class="h3 mb-2 text-gray-800">Transaksi Jual-Beli</h1>
-           <h6><strong style="color:red;">Pastikan anda telah memeriksa barang yang akan dibeli sesuai dengan permintaan</strong></h6>
+          <h1 class="h3 mb-2 text-gray-800">Add To Cart</h1>
+           <h6><strong style="color:red;">Make sure you have checked the item to be purchased according to the request</strong></h6>
 
           <!-- DataTales Example -->
           <div class="card shadow mb-4">
             <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary">Form Transaksi Jual-Beli</h6>
+              <h6 class="m-0 font-weight-bold text-primary">Buying and Selling Transaction Form</h6>
             </div>
             <div class="card-body">
               <div class="table-responsive">
@@ -26,7 +26,7 @@
                   <table id="myTable" class=" table order-list">
                   <thead>
                       <tr class="table-secondary">
-                          <td>Name</td>
+                          <td>Item Name</td>
                           <td>Quantity</td>
                       </tr>
                   </thead>
@@ -61,15 +61,15 @@
                               </td>
                               <td class="col-sm-4">{{forms.empty_form.quantity}}</td>
                               <input value="{{request_user}}" type="hidden" name="form-__prefix__-user" id="id_form-__prefix__-user">
-                              <td> <button id="btnDelete" class="btn btn-outline-primary btn-sm">Hapus</button></td>
+                              <td> <button id="btnDelete" class="btn btn-outline-danger btn-sm">Delete</button></td>
                        </tr>
                   </tfoot>
               </table>
-                      <input type="button" class="btn btn-outline-info btn-sm" id="transactionAdderForm" value="Tambah Barang" />
+                      <input type="button" class="btn btn-outline-info btn-sm" id="transactionAdderForm" value="Add Item" />
               </div>
                   <div>
                      <br>
-                     <button class="btn btn-outline-primary btn-sm" type="submit">Bayar</button>
+                     <button class="btn btn-primary btn-lg" type="submit">Buy</button>
                   </div>
                 </form>
                 </table>

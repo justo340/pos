@@ -58,19 +58,19 @@
 
       <!-- Heading -->
       <div class="sidebar-heading">
-        Laporan Administrasi Toko
+        Store Administration Report
       </div>
 
       <!-- Nav Item - Pages Collapse Menu -->
       <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
           <i class="fas fa-warehouse"></i>
-          <span>Daftar Barang</span>
+          <span>Item List</span>
         </a>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Menu Daftar Barang:</h6>
-            <a class="collapse-item" href="{% url 'InputStock' %}">Input Barang</a>
+            <h6 class="collapse-header">Item Menu</h6>
+            <a class="collapse-item" href="{% url 'InputStock' %}">Stock Input</a>
             <a class="collapse-item" href="{% url 'TotalStock' %}">Total Stock</a>
 
           </div>
@@ -81,13 +81,13 @@
       <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
           <i class="fas fa-shopping-cart"></i>
-          <span>Transaksi</span>
+          <span>Purchasing</span>
         </a>
         <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Daftar Transaksi:</h6>
-            <a class="collapse-item" href="{% url 'Cart' %}">Transaksi</a>
-            <a class="collapse-item" href="{% url 'DaftarPembelian' %}">Daftar Pembelian</a>
+            <h6 class="collapse-header">Transactions</h6>
+            <a class="collapse-item" href="{% url 'Cart' %}">Cart</a>
+            <a class="collapse-item" href="{% url 'DaftarPembelian' %}">List of Purchased Items</a>
 <!--            <a class="collapse-item" href="{% url 'ReportView' %}">Laporan</a>-->
 <!--            <a class="collapse-item" href="#">Lainnya</a>-->
           </div>
@@ -98,7 +98,7 @@
       <hr class="sidebar-divider">
 
       <div class="sidebar-heading">
-        Laporan Pembukuan Toko
+        Store Bookkeeping Report
       </div>
       <!-- Nav Item - Tables -->
       <li class="nav-item">
@@ -228,10 +228,10 @@
             <span aria-hidden="true">×</span>
           </button>
         </div>
-        <div class="modal-body">Apakah anda yakin ingin keluar? pastikan semua data sudah tersimpan.</div>
+        <div class="modal-body">Are you sure you want to Exit? Kindly make sure all your data is saved.</div>
         <div class="modal-footer">
           <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-          <a class="btn btn-primary" href="{% url 'Logout' %}">Logout</a>
+          <a class="btn btn-danger" href="{% url 'Logout' %}">Logout</a>
         </div>
       </div>
     </div>
