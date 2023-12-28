@@ -14,7 +14,7 @@
             <br>
                 <h3>Username : {{user.username}}</h3>
             <br>
-            <a href="#aboutModal" data-toggle="modal" data-target="#myModal" class="btn btn-outline-black btn-sm">Change Profile</a>
+            <a href="#aboutModal" data-toggle="modal" data-target="#myModal" class="btn btn-outline-secondary btn-sm">Change Profile</a>
         </center>
     </div>
 </div>
@@ -48,7 +48,7 @@
                                     {% for data_user in data_user %}
                                         <div class="row">
                                             <div class="col-md-6">
-                                                <label>Nama Depan</label>
+                                                <label>First Name</label>
                                             </div>
                                             <div class="col-md-6">
                                                 <p><b>{{data_user.nama_depan}}</b></p>
@@ -56,7 +56,7 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-md-6">
-                                                <label>Nama Belakang</label>
+                                                <label>Last Name</label>
                                             </div>
                                             <div class="col-md-6">
                                                 <p><b>{{data_user.nama_belakang}}</b></p>
@@ -72,37 +72,37 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-md-6">
-                                                <label>Telephone</label>
+                                                <label>Telephone Number</label>
                                             </div>
                                             <div class="col-md-6">
                                                 <p><b>{{data_user.nomor_telephone}}</b></p>
                                             </div>
                                             <div class="col-md-6">
-                                                <label>Provinsi</label>
+                                                <label>Province</label>
                                             </div>
                                             <div class="col-md-6">
                                                 <p><b>{{data_user.provinsi}}</b></p>
                                             </div>
                                             <div class="col-md-6">
-                                                <label>Kota</label>
+                                                <label>City</label>
                                             </div>
                                             <div class="col-md-6">
                                                 <p><b>{{data_user.kota}}</b></p>
                                             </div>
                                             <div class="col-md-6">
-                                                <label>Kecamatan</label>
+                                                <label>District</label>
                                             </div>
                                             <div class="col-md-6">
                                                 <p><b>{{data_user.kecamatan}}</b></p>
                                             </div>
                                             <div class="col-md-6">
-                                                <label>Kelurahan</label>
+                                                <label>Neighbourhood</label>
                                             </div>
                                             <div class="col-md-6">
                                                 <p><b>{{data_user.kelurahan}}</b></p>
                                             </div>
                                             <div class="col-md-6">
-                                                <label>Alamat</label>
+                                                <label>address</label>
                                             </div>
                                             <div class="col-md-6">
                                                 <p><b>{{data_user.alamat}}</b></p>
@@ -129,13 +129,13 @@
                 <div class="modal-body">
                     <center>
                     <img src="{{user.profile.picture.url}}" name="aboutme" width="140" height="140" border="0" class="img-circle"></a>
-                    <h3 class="media-heading">{{user.username}}<small> | Greater area : Jakarta</small></h3>
-                    <span><strong>Section: </strong></span>
-                        <b>Akun Info</b>
+                   <!-- <h3 class="media-heading">{{user.username}}<small> | Greater area : Jakarta</small></h3>
+            <span><strong>Section: </strong></span>
+                        <b>Account Info</b>
                     </center>
-                    <hr>
+                 <hr>
                     <center>
-                    <p class="text-left"><strong>Bio: </strong><br>
+                    <p class="text-c"><strong>Bio: </strong><br>-->
                        <form method="post" enctype="multipart/form-data">
                           {% csrf_token %}
                             <fieldset class="form-group">
@@ -144,7 +144,7 @@
                                {{ profile_form|crispy }}
                             </fieldset>
                             <div class="form-group">
-                              <button class="btn btn-outline-primary btn-sm" type="submit">Submit Change</button>
+                              <button class="btn btn-primary btn-sm" type="submit">Submit Change</button>
                             </div>
                        </form>
                     <br>

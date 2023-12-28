@@ -8,13 +8,13 @@
 
         <div class="container-fluid">
           <!-- Page Heading -->
-          <h1 class="h3 mb-2 text-gray-800">Nota Pembelian</h1>
-           <p style="color:red;"><b>Pastikan Printer anda sudah terhubung jika ingin melakukan cetak struck pembelian.</b></p>
+          <h1 class="h3 mb-2 text-gray-800">Purchase Note Details</h1>
+           <p style="color:red;"><b>Make sure your printer is connected to print purchase details.</b></p>
 
           <!-- DataTales Example -->
           <div class="card shadow mb-4">
             <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary">Struck Print</h6>
+              <h6 class="m-0 font-weight-bold text-primary">Purchase Details</h6>
             </div>
             <div class="card-body">
               <div class="table-responsive">
@@ -22,15 +22,15 @@
                   <thead>
                     <tr class="table-success">
 <!--                      <th>Nomor</th>-->
-                      <th>Nama Barang</th>
-                      <th>Jumlah Barang</th>
-                      <th>Jumlah Harga</th>
+                      <th>Item Name</th>
+                      <th>Number of Items</th>
+                      <th>Total Price</th>
                     </tr>
                   </thead>
-                     Nomor Nota: {{dataStruck.nomor}}<br>
-                     Nama Kasir: <b style="color:black;">{{dataUser.nama_depan}} {{dataUser.nama_belakang}}</b> <br>
+                     Note Number: {{dataStruck.nomor}}<br>
+                     Cahier Name: <b style="color:black;">{{dataUser.nama_depan}} {{dataUser.nama_belakang}}</b> <br>
                      E-mail: <i><u>{{dataUser.email}}</u></i><br>
-                     Tanggal & Bulan : <b>{{dataStruck.created}}</b>
+                     Date & Month : <b>{{dataStruck.created}}</b>
                   <tbody>
                         {%for produk in dataStruckListProduk%}
                              <tr>
@@ -48,7 +48,7 @@
                    </tfoot>
                 </table>
               </div>
-                <button type="button" class="btn btn-secondary btn-sm"><i class="fas fa-print"></i>  Print Struck</button>
+                <button type="button" class="btn btn-secondary btn-sm"><i class="fas fa-print"></i>  Print Purchase Details</button>
             </div>
           </div>
         </div>

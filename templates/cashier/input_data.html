@@ -11,12 +11,12 @@
   <div class="container-fluid">
     <!-- Page Heading -->
     <h1 class="h3 mb-2 text-gray-800">Stock Input</h1>
-     <h6><strong style="color:red;">Pastikan anda telah memeriksa barang yang datang sesuai dengan nota anda</strong></h6>
+     <h6><strong style="color:red;">Make sure you have checked the items that arrive according to your note</strong></h6>
 
     <!-- DataTales Example -->
     <div class="card shadow mb-4">
       <div class="card-header md-3">
-        <h6 class="m-0 font-weight-bold text-primary">Form Input Stock</h6>
+        <h6 class="m-0 font-weight-bold text-primary">Stock Input Form</h6>
       </div>
       <div class="card-body md-4">
         <div class="table-responsive">
@@ -30,12 +30,12 @@
                      <div class="form-row">
                          <thead>
                            <tr class="table-secondary">
-                             <th scope="col">Nama Barang</th>
-                             <th scope="col">Jumlah</th>
+                             <th scope="col">Item name</th>
+                             <th scope="col">Quantity</th>
                              <!--<th>Unit</th>-->
-                             <th scope="col">Harga Satuan</th>
+                             <th scope="col">Unit price</th>
                     <!--                               <th>Total Beli Satuan</th>-->
-                             <th scope="col">Laba Persen</th>
+                             <th scope="col">Profit Percentage</th>
                     <!--                         <th scope="col">Option</th>-->
                            </tr>
                          </thead>
@@ -71,15 +71,15 @@
                                         <td>{{forms.empty_form.harga_beli_satuan}}</td>
                                         <td>{{forms.empty_form.laba_persen}}</td>
                                         <input value="{{request_user}}" type="hidden" name="form-__prefix__-user" id="id_form-__prefix__-user">
-                                        <td> <button id="btnDelete" class="btn btn-outline-primary btn-sm">Hapus</button></td>
+                                        <td> <button id="btnDelete" class="btn btn-outline-danger btn-sm">Delete</button></td>
                                  </tr>
                                </tfoot>
                          </div>
                      </table>
-                    &nbsp; <input type="button" class="btn btn-outline-info btn-sm" id="inputStockAdder" value="Tambah Barang" />
+                    &nbsp; <input type="button" class="btn btn-outline-info btn-sm" id="inputStockAdder" value="Add Item" />
                 <div>
                    <br>
-                   <button class="btn btn-outline-primary btn-sm" type="submit">Simpan</button>
+                   <button class="btn btn-primary btn-sm" type="submit">Save</button>
                 </div>
                 <!--Adding form-->
 

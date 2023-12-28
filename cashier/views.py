@@ -143,7 +143,7 @@ def StruckPembelian(request, pk):
         'dataStruckListProduk': dataStruckListProduk,
         'dataUser': dataUser
     }
-    return render(request, 'cashier/struck.html', context)
+    return render(request, 'cashier/purchase_details.html', context)
 
 @login_required()
 def DaftarPembelian(request):
